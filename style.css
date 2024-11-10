@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'Renogare';
+    src: url('font/fonts/Renogare-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@media (min-width : 292px ) and (max-width : 767px ) {
+
+    #text{
+
+        display: none;
+
+    }
+    #menu_laptop{
+
+        display: none;
+
+    }
+
+    #menu_smartphone{
+
+        display: flex;
+        align-items: center;
+        background:    rgba(0, 0, 0, 0);
+        border:        3px solid #ffffff;
+        border-radius: 1000px;
+        padding:       0px 30px;
+        color:         #ffffff;
+        display:       inline-block;
+        text-align:    center;
+        color: white;
+    
+    }
+
+}
+@media (min-width : 293px ) and (max-width : 1199px ) {
+
+    #menu_laptop{
+
+        display: none;
+
+    }
+
+    #menu_smartphone{
+
+        display: flex;
+        align-items: center;
+        background:    rgba(0, 0, 0, 0);
+        border:        3px solid #ffffff;
+        border-radius: 1000px;
+        padding:       0px 30px;
+        color:         #ffffff;
+        display:       inline-block;
+        text-align:    center;
+        color: white;
+    
+    }
+
+}
+@media (min-width : 1200px ) and (max-width : 2500px ) {
+
+    #menu_smartphone{
+
+        display: none;
+
+    }
+    #menu_laptop{
+
+        /**/
+
+    }
+
+}
+
+header{
+
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+
+}
+
+body{
+
+    background-color: #172128;
+    color: white;
+    font-family: 'rubik';   
+
+}
+
+#left_side{
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+
+}
+
+#right_side{
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+
+}
+
+
+
+#banderoles{
+
+    display: flex;
+    flex: 1;
+    justify-content: center;
+
+    width: 100%;               /* Le conteneur prend toute la largeur */
+    height: 500px;             /* Hauteur fixe pour créer un cadre */
+    overflow: hidden;          /* Masque les parties de l'image qui dépassent */
+
+}
+
+#banderoles img {
+    width: 100%;               /* L'image prend toute la largeur du conteneur */
+    height: 100%;              /* L'image prend toute la hauteur du conteneur */
+    object-fit: cover;         /* Recadre l'image pour qu'elle couvre tout le conteneur */
+}
+
+/*.image-full-width {
+    width: 100%;          /* L'image prend toute la largeur du conteneur */
+  /*  max-height: 500px;         /* Conserve les proportions de l'image */
+  /*  display: block;       /* Enlève l'espace blanc autour de l'image si elle est en ligne */
+/*}*/
+
+#text_container {
+    position: absolute;          /* Positionnement absolu pour le texte */
+    top: 35%;                    /* Centre verticalement le texte */
+    left: 50%;                   /* Centre horizontalement le texte */
+    transform: translate(-50%, -50%); /* Centre exact avec transform */
+    color: white;                /* Couleur du texte */
+    text-align: center;          /* Centre le texte */
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+    padding: 20px;               /* Espace autour du texte */
+    border-radius: 8px;          /* Optionnel : arrondit les bords */
+}
+#description{
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+
+}
+
