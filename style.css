@@ -178,6 +178,16 @@ body{
 
 }
 
+button.menu_deroulant::after {
+    content: "⏷";
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.nom-classe:hover .menu_deroulant::after {
+    content: "⏶";
+}
+
 #before_footer{
 
     display: flex;
