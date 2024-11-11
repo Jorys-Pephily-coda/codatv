@@ -1,9 +1,26 @@
-@font-face {
-    font-family: 'Renogare';
-    src: url('font/fonts/Renogare-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+/*la page prend toute la hauteur de la fenêtre */
+html, body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
+
+/*définis la couleur de la page, la couleur du texte et la police d'ecriture*/
+body{
+
+    background-color: #172128;
+    color: white;
+    font-family: 'rubik';   
+
+}
+/* Zone de contenu principal */
+.content {
+    flex: 1; /* Prend tout l'espace disponible, poussant le footer vers le bas */
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+/*Vue Téléphone*/
 @media (min-width : 292px ) and (max-width : 767px ) {
 
     #text{
@@ -32,7 +49,19 @@
     
     }
 
+    /*le footer*/
+    footer{
+
+        background-color: black;
+        padding: 10px;
+        display: flex;
+        flex-flow: row wrap;
+
+    }
+
 }
+
+/*Vue Tablette*/
 @media (min-width : 293px ) and (max-width : 1199px ) {
 
     #menu_laptop{
@@ -56,7 +85,19 @@
     
     }
 
+    /*le footer*/
+    footer{
+
+        background-color: black;
+        padding: 10px;
+        display: flex;
+        flex-flow: row wrap;
+
+    }
+
 }
+
+/*Vue Pc*/
 @media (min-width : 1200px ) and (max-width : 2500px ) {
 
     #menu_smartphone{
@@ -66,37 +107,33 @@
     }
     #menu_laptop{
 
-        /**/
+        display: flex;
+        flex-direction: row;
+        align-items: center;
 
     }
+
     footer{
 
-        display: flex;
-        align-items: end;
-        justify-content: center;
         background-color: black;
-        margin: 0 24px;
-        flex-wrap: wrap;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
+        padding: 10px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
     
     }
 
 }
+
+/*header*/
 
 header{
 
     display: flex;
     flex-direction: row;
     flex: 1;
-
-}
-
-body{
-
-    background-color: #172128;
-    color: white;
-    font-family: 'rubik';   
+    margin-left:  32px;
+    margin-right:  32px;
 
 }
 
@@ -105,7 +142,8 @@ body{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    flex: 1;
+    flex: 80%;
+    gap: 10px;
 
 }
 
@@ -115,20 +153,15 @@ body{
     justify-content: flex-end;
     align-items: center;
     flex: 1;
+    gap: 15px;
 
 }
 
-
+/*banderole*/
 
 #banderoles{
 
-    display: flex;
-    flex: 1;
-    justify-content: center;
-
-    width: 100%;               /* Le conteneur prend toute la largeur */
     height: 500px;             /* Hauteur fixe pour créer un cadre */
-    overflow: hidden;          /* Masque les parties de l'image qui dépassent */
 
 }
 
@@ -137,12 +170,6 @@ body{
     height: 100%;              /* L'image prend toute la hauteur du conteneur */
     object-fit: cover;         /* Recadre l'image pour qu'elle couvre tout le conteneur */
 }
-
-/*.image-full-width {
-    width: 100%;          /* L'image prend toute la largeur du conteneur */
-  /*  max-height: 500px;         /* Conserve les proportions de l'image */
-  /*  display: block;       /* Enlève l'espace blanc autour de l'image si elle est en ligne */
-/*}*/
 
 #text_container {
     position: absolute;          /* Positionnement absolu pour le texte */
@@ -155,28 +182,32 @@ body{
     padding: 20px;               /* Espace autour du texte */
     border-radius: 8px;          /* Optionnel : arrondit les bords */
 }
+
 #description{
 
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-around;
 
 }
 
+/*main*/
 #main{
 
     display: flex;
     align-items: stretch;
     flex-direction:column;
+    margin-left: 10px;
+    margin-right: 10px;
 
 }
 
+/*ordonne les images de la rubrique "notre selection"*/
 #selection{
 
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    justify-content: space-between;
+    gap: 15px;
 
 }
 
@@ -190,36 +221,13 @@ body{
 
 }
 
-button.menu_deroulant::after {
-    content: "⏷";
-    display: inline-block;
-    margin-left: 8px;
-}
-
-.nom-classe:hover .menu_deroulant::after {
-    content: "⏶";
-}
-
+/*l'offre fance television*/
 #before_footer{
 
     display: flex;
     align-items: end;
 
 }
-
-footer{
-
-    display: flex;
-    align-items: end;
-    background-color: black;
-    margin: 0 24px;
-    flex-wrap: wrap;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-
-}
-
-
 
 /* Style général pour le menu */
 .menu {
@@ -280,3 +288,12 @@ footer{
 #menu-toggle:checked + .menu-button .menu-arrow::after {
     content: "⏶"; /* Flèche vers le haut */
 }
+
+/*le footer*/
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* S'assure que le conteneur occupe toute la hauteur */
+}
+
+
