@@ -188,6 +188,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
 
 }
 
@@ -218,6 +219,23 @@ header{
     width: auto;
     border-radius: 8px;
     border-style: none;
+
+}
+
+/*hover de la selection*/
+#contenu_selection{
+
+    display: flex;
+    flex: 1;
+
+}
+
+#contenu_selection:hover{
+
+    display: flex;
+    
+    border-radius: 8px;
+    border:        2px solid #ffffff;
 
 }
 
