@@ -165,7 +165,7 @@ header{
 
 }
 
-#celeste img {
+#celeste {
     width: 100%;               /* L'image prend toute la largeur du conteneur */
     height: 100%;              /* L'image prend toute la hauteur du conteneur */
     object-fit: cover;         /* Recadre l'image pour qu'elle couvre tout le conteneur */
@@ -188,7 +188,6 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
 
 }
 
