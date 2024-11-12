@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Renogare';
+    src: url('font/Renogare-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*la page prend toute la hauteur de la fenêtre */
 html, body {
     margin: 0;
@@ -385,6 +392,7 @@ body{
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    font-family: 'Renogare';
 
   }
 .farewellvideo{
