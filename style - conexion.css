@@ -1,0 +1,127 @@
+/*la page prend toute la hauteur de la fenêtre */
+html, body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/*définis la couleur de la page, la couleur du texte et la police d'ecriture*/
+body{
+
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-family: 'rubik';   
+
+}
+/* Zone de contenu principal */
+.content {
+    flex: 1; /* Prend tout l'espace disponible, poussant le footer vers le bas */
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+/*Vue Téléphone*/
+@media (min-width : 292px ) and (max-width : 767px ) {
+
+    #aside{
+
+        display: none;
+
+    }
+
+    /*le footer*/
+    footer{
+
+        background-color: black;
+        padding: 10px;
+        display: flex;
+        flex-flow: row wrap;
+
+    }
+
+}
+
+/*Vue Tablette*/
+@media (min-width : 293px ) and (max-width : 1199px ) {
+
+    #aside{
+
+        display: none;
+
+    }
+
+    /*le footer*/
+    footer{
+
+        background-color: black;
+        padding: 10px;
+        display: flex;
+        flex-flow: row wrap;
+
+    }
+
+}
+
+/*Vue Pc*/
+@media (min-width : 1200px ) and (max-width : 2500px ) {
+
+    #name{
+
+        display: none;
+
+    }
+
+    /*le footer*/
+    footer{
+
+        background-color: black;
+        color: white;
+        padding: 10px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    
+    }
+
+}
+
+
+
+/*le footer*/
+#main{
+
+    display: flex;
+    flex-direction: row-reverse;
+    
+
+}
+/*le footer*/
+#aside{
+
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+/*le footer*/
+#article{
+
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+/*le footer*/
+#boite{
+
+    display: flex;
+    flex-direction: row;
+
+}
+/*le footer*/
+
+

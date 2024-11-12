@@ -49,6 +49,16 @@ body{
     
     }
 
+    /*header*/
+
+    header{
+
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+    
+    }
+
     /*le footer*/
     footer{
 
@@ -85,6 +95,16 @@ body{
     
     }
 
+    /*header*/
+
+    header{
+
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+
+    }
+
     /*le footer*/
     footer{
 
@@ -113,6 +133,18 @@ body{
 
     }
 
+    /*header*/
+
+    header{
+
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        margin-left:  32px;
+        margin-right:  32px;
+
+    }
+
     footer{
 
         background-color: black;
@@ -125,16 +157,8 @@ body{
 
 }
 
-/*header*/
-
-header{
-
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    margin-left:  32px;
-    margin-right:  32px;
-
+header img{
+    
 }
 
 #left_side{
@@ -227,6 +251,9 @@ header{
 
     display: flex;
     flex: 1;
+    overflow-x: auto;
+    white-space: nowrap;
+    /*background-image: url("");*/
 
 }
 
