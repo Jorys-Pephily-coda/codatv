@@ -23,7 +23,7 @@ body{
 /*Vue Téléphone*/
 @media (min-width : 292px ) and (max-width : 767px ) {
 
-    #aside{
+    #aaside{
 
         display: none;
 
@@ -32,7 +32,7 @@ body{
     /*le footer*/
     footer{
 
-        background-color: black;
+        background-color: rgb(255, 255, 255);
         padding: 10px;
         display: flex;
         flex-flow: row wrap;
@@ -44,7 +44,7 @@ body{
 /*Vue Tablette*/
 @media (min-width : 293px ) and (max-width : 1199px ) {
 
-    #aside{
+    #aaside{
 
         display: none;
 
@@ -53,7 +53,7 @@ body{
     /*le footer*/
     footer{
 
-        background-color: black;
+        background-color: rgb(255, 255, 255);
         padding: 10px;
         display: flex;
         flex-flow: row wrap;
@@ -65,7 +65,7 @@ body{
 /*Vue Pc*/
 @media (min-width : 1200px ) and (max-width : 2500px ) {
 
-    #name{
+    #name-site{
 
         display: none;
 
@@ -74,8 +74,8 @@ body{
     /*le footer*/
     footer{
 
-        background-color: black;
-        color: white;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
         padding: 10px;
         display: flex;
         flex-flow: row wrap;
@@ -91,37 +91,120 @@ body{
 #main{
 
     display: flex;
-    flex-direction: row-reverse;
-    
+    flex-direction: row-reverse; 
+
+}
+
+#name-site{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+/*le footer*/
+#aaside{
+
+    display: flex;
+    flex: 20%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url(images/banderole.jpg);
 
 }
 /*le footer*/
-#aside{
+#aarticle{
 
     display: flex;
     flex: 1;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
-}
-/*le footer*/
-#article{
-
-    display: flex;
-    flex: 1;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    padding: 12px;   
 
 }
 /*le footer*/
 #boite{
 
     display: flex;
+    flex: 1;
     flex-direction: row;
+    justify-content: center;
+    gap: 10px;
 
 }
 /*le footer*/
+#formdiv{
+
+    display: flex;
+    justify-content: center;
+    padding: 12px;   
+
+}
+
+#conditions{
+
+    display: flex;
+    background-color: rgba(152, 152, 152, 0.5); /* Fond semi-transparent */
+    border-radius: 8px;          /* Optionnel : arrondit les bords */
 
 
+}
+#margine{
+
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+#rester{
+
+    display: flex;
+    background-color: rgba(152, 152, 152, 0.5); /* Fond semi-transparent */
+    border-radius: 8px;          /* Optionnel : arrondit les bords */
+    flex-direction: row;
+
+}
+footer{
+
+    font-size: 16px;
+
+}
+
+#indication{
+
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    margin-right: 10px;
+    margin-left: 10px;
+    gap: 5px;
+
+}
+
+#box_indication{
+
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(32, 68, 183, 0.1); /* Fond semi-transparent */
+    border-radius: 8px;          /* Optionnel : arrondit les bords */
+    border:        1px solid #474f7e;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+
+}
+
+#element-left:hover{
+
+    background-color: rgba(83, 83, 83, 0.5); /* Fond semi-transparent */
+    border-radius: 1000px;          /* Optionnel : arrondit les bords */
+
+}
