@@ -83,6 +83,19 @@ body{
     
     }
 
+    /*le aside*/
+    #aaside{
+
+        display: flex;
+        flex: 20%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        background-image: url(images/banderole.jpg);
+
+    }
+
 }
 
 
@@ -104,18 +117,6 @@ body{
 
 }
 
-/*le footer*/
-#aaside{
-
-    display: flex;
-    flex: 20%;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    background-image: url(images/banderole.jpg);
-
-}
 /*le footer*/
 #aarticle{
 
