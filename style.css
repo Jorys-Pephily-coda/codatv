@@ -347,3 +347,55 @@ body{
 }
 
 
+#anim_s {
+    color: #ffffff;
+    text-decoration: none;
+  }
+#anim_s {
+    position: relative;
+  }
+  #anim_s::after {
+    content: '';
+    transform-origin: 0 0; 
+    transform: scaleX(0);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: .4em; 
+    background: #78ab4e;
+    z-index: -1;
+    opacity: 0.8;
+    transition: transform .3s;
+  }
+  #anim_s:hover::after {
+    transform: scaleX(1);
+  }
+#menu{
+
+    color: white;
+    text-decoration: none;
+
+}
+
+
+  #Farewell{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+  }
+.farewellvideo{
+
+    height:100vh;
+    width: 100vw;  
+
+}
+iframe{
+
+    width : 100%;
+    height: 100%; 
+
+}
