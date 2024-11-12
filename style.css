@@ -202,7 +202,7 @@ body{
 
 #text_container {
     position: absolute;          /* Positionnement absolu pour le texte */
-    top: 35%;                    /* Centre verticalement le texte */
+    top: 50%;                    /* Centre verticalement le texte */
     left: 50%;                   /* Centre horizontalement le texte */
     transform: translate(-50%, -50%); /* Centre exact avec transform */
     color: white;                /* Couleur du texte */
